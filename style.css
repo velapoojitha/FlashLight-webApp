@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #000;
+  color: #141414;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  padding: 100px 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.switch-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+#toggleFlashlight {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ffcc00;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toggleFlashlight:hover {
+  background-color: #fff700;
+  box-shadow: 0 0 20px #fff700;
+}
+
+.flashlight {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0.6) 90%);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
