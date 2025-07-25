@@ -25,4 +25,7 @@ An interactive and responsive **Flashlight Simulator** built using HTML, CSS, an
 
 ---
 
-
+## Project live link
+```
+https://velapoojitha.github.io/FlashLight-webApp/
+```
